@@ -1,20 +1,19 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8" />
-  <title>Meiji Restoration Gantt</title>
-  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
-  <script>mermaid.initialize({ startOnLoad: true, securityLevel: 'loose' });</script>
-</head>
-<body>
-<pre class="mermaid">
-gantt
-  dateFormat  YYYY-MM-DD
-  title 明治維新主要イベント
+<meta charset="utf-8">
+<title>縦書きデモ</title>
+<style>
+  .tategaki {
+    writing-mode: vertical-rl;   /* 縦書き右→左 */
+    text-orientation: upright;  /* 句読点も縦向き */
+    font-family: "Hiragino Mincho ProN", serif;
+    line-height: 1.8;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    width: 12em;                /* 幅は行数で調整 */
+  }
+</style>
 
-  section 幕末
-  大塩平八郎の乱 :milestone, oshio, 1837-04-01, 0d
-  大政奉還       :milestone, taisei, 1867-10-14, 0d
-</pre>
-</body>
-</html>
+<div class="tategaki">
+  明治維新は日本の近代化を決定づけた一連の政治・社会変革である。
+  1867年の大政奉還を経て、版籍奉還・廃藩置県へと進み、中央集権国家が成立した。
+</div>
